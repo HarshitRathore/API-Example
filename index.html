@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>API Example</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+</head>
+
+<body id="top">
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="btn navbar-text" id="logoutbtn" href="#" onclick="fbLogout()" style="border-width: 1px; border-color: white; font-weight: 600;">Logout</a>
+    </nav>
+    <div class="container" style="margin-top: 3rem;">
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 27rem; margin-left: auto; margin-right: auto;">
+                  <img class="card-img-top" src="images/category-1.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <button class="btn btn-outline-danger btn-lg btn-block redirect" id="101">Try This One!!!!!!</button>
+                  </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 27rem; margin-left: auto; margin-right: auto;">
+                  <img class="card-img-top" src="images/category-1.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <button class="btn btn-outline-danger btn-lg btn-block redirect" id="102">Try This One!!!!!!</button>
+                  </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 27rem; margin-left: auto; margin-right: auto;">
+                  <img class="card-img-top" src="images/category-1.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <button class="btn btn-outline-danger btn-lg btn-block redirect" id="103">Try This One!!!!!!</button>
+                  </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 27rem; margin-left: auto; margin-right: auto;">
+                  <img class="card-img-top" src="images/category-1.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <button class="btn btn-outline-danger btn-lg btn-block redirect" id="104">Try This One!!!!!!</button>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron text-center" style="margin-bottom:0; margin-top: 50px; padding: 2rem 1rem;">
+      <a href="#" style="margin: 40px;">Contact</a>
+      <a href="#" style="margin: 40px;">FAQ</a>
+      <a href="#" style="margin: 40px;">Privacy Policy</a>
+      <a href="#" style="margin: 40px;">Terms Of Services</a>
+      <a href="#" style="margin: 40px;">Account Removal</a>
+      <p style="margin-top: 30px;">Disclaimer: All content is provided for fun and entertainment purposes only.</p>
+      <p style="font-weight: 700;">© LolSided.com 2018</p>
+    </div>
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(".redirect").click(function(){
+            window.location = "index.php?quiz="+this.id;
+        });
+    </script>
+</body>
+
+</html>
